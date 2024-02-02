@@ -33,7 +33,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "BLE_ENCODER";
             #sensor-binding-cells = <0>;
-            bindings = <&bt BT_PRV>, <&bt BT_PRV>;
+            bindings = <&bt BT_NXT>, <&bt BT_PRV>;
         };
     };
 
