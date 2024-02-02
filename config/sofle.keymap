@@ -29,12 +29,6 @@
     };
 
     behaviors {
-        ble_encoder: ble_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "BLE_ENCODER";
-            #sensor-binding-cells = <0>;
-            bindings = <&bt BT_NXT>, <&bt BT_PRV>;
-        };
     };
 
     macros {
@@ -117,7 +111,7 @@
                             &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &kp K     &trans
             >;
 
-            sensor-bindings = <&ble_encoder>, <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&none>, <&inc_dec_kp PG_UP PG_DN>;
         };
 
         adjust_layer {
